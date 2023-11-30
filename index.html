@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GoodCook</title>
+    <meta name="GoodCook" content="GoodCook Recipes and More!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jsfile.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f721fcd643.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="toggle-btn" onclick="show()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <a href="/recipes.html"><li>Recipes</li></a>
+        <a href="/guides.html"><li>Guides</li></a>
+        <a href="/ingredients.html"><li>Ingredients</li></a>
+        <a href="/diets.html"><li>Sort by Diet</li></a>
+        <a href="/inseason.html"><li>In-Season</li></a>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <span id="span1"></span>
+      <span id="span2"></span>
+      <a href="index.html"><img src="images/GCLogo.svg" id='Logo1' alt="GoodCook"/></a>
+      <div class="topnav">
+        <input type="text" id="search-input" placeholder="Search.." />
+      </div>
+      <!-- Searchbox Demo -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var searchInput = document.getElementById("search-input");
+
+          searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              alert("Search Function Unavailable Currently ):");
+            }
+          });
+        });
+      </script>
+    </header>
+
+    <!-- Mobile Menu -->
+
+    <div class="mobile-menu">
+      <ul>
+        <a href="/recipes.html"><li>Recipes</li></a>
+        <a href="/guides.html"><li>Guides</li></a>
+        <a href="/ingredients.html"><li>Ingredients</li></a>
+        <a href="/diets.html"><li>Sort by Diet</li></a>
+        <a href="/inseason.html"><li>In-Season</li></a>
+      </ul>
+    </div>
+
+    <!-- Hero -->
+
+    <div class="hero-container">
+      <img src="images/Dish5.jpg" alt="Salmon Bowl"/>
+      <div class="banner" id="banner1">
+        <span><h3>new recipe - salmon bowl</h3></span>
+      </div>
+      <div class="mobile-banner" id="mobile-banner1">
+        <a href=""><span><h3>new recipe - salmon bowl</h3></span></a>
+      </div>
+
+      <div class="hero-showcase-mobile">
+        <a href=""><h1>Teriyaki Salmon Bowl</h1></a>
+        <a href=""><p>
+          Savor our Teriyaki Salmon Bowl: Grilled salmon glazed in teriyaki
+          perfection, served on rice with corn, boiled egg, and edamame. A
+          delicious, wholesome dish that comes together in less than 30
+          minutes.
+        </p></a>
+      </div>
+
+      <div class="hero-showcase-grid">
+        <div class="item hero1-griditem1">
+          <a href="#"><h1>Teriyaki Salmon Bowl</h1></a>
+        </div>
+        <div class="item hero1-griditem2">
+          <p>
+            Savor our Teriyaki Salmon Bowl: Grilled salmon glazed in teriyaki
+            perfection, served on rice with corn, boiled egg, and edamame. A
+            delicious, wholesome dish that comes together in less than 30
+            minutes.
+          </p>
+        </div>
+        <div class="item hero1-griditem3">
+          <a href="#"><h4>By Someone Someone</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="thelatest-container">
+      <h1 class="thelatest">The Latest</h1>
+      <img src="images/squiggle.svg" alt="squiggle decoation" />
+    </div>
+
+    <div class="thelatest-container-grid">
+      <div class="thelatest-item" id="recipe1-griditem1">
+        <a href=""><h1>Pesto Hummus</h1></a>
+      </div>
+      <div class="thelatest-item" id="recipe1-griditem2">
+        <a href=""><h1>Swedish Meatballs</h1></a>
+      </div>
+      <div class="thelatest-item" id="recipe1-griditem3">
+        <a href=""><h1>Club Sandwich</h1></a>
+      </div>
+      <div class="thelatest-item" id="recipe1-griditem4">
+        <a href=""><h1>Belgian Waffles</h1></a>
+      </div>
+      <div class="thelatest-item" id="recipe1-griditem5">
+        <a href=""><h1>Thai Chili Soup</h1></a>
+      </div>
+      <div class="thelatest-item" id="recipe1-griditem6">
+        <a href=""><h1>Lamb and Chicken Kebabs</h1></a>
+      </div>
+    </div>
+
+
+    <footer>
+      <img src="images/GCLogo.svg" alt="GoodCook 2023" />
+      <p>Get fresh recipes, cooking tips, and more!</p>
+      <div class="bottomemail">
+        <input type="text" id="email-input" placeholder="Enter Email" />
+      </div>
+      <div class="link-container">
+        <a href="#"><h4>About •</h4></a>
+        <a href="#"><h4>Contact Us •</h4></a>
+        <a href="#"><h4>Submit A Recipe •</h4></a>
+        <a href="#"><h4>Privacy Policy</h4></a>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var searchInput = document.getElementById("email-input");
+
+          searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              alert("Email Subscription Unavailable ):");
+            }
+          });
+        });
+      </script>
+    </footer>
+  </body>
+</html>

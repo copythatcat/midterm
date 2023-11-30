@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="GoodCook Recipes" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src='jsfile.js'></script>
+  </head>
+
+<body>
+      <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="toggle-btn" onclick="show()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+          <ul>
+            <a href="/recipes.html"><li>Recipes</li></a>
+            <a href="/guides.html"><li>Guides</li></a>
+            <a href="/ingredients.html"><li>Ingredients</li></a>
+            <a href="/diets.html"><li>Sort by Diet</li></a>
+            <a href="/inseason.html"><li>In-Season</li></a>
+          </ul>
+    </div>
+
+      <!-- Header -->
+    <header>
+        <span></span>
+        <span></span>
+        <a href="#"><img src="/Assets/GCLogo.svg" alt="GoodCook"></a>
+         <div class="topnav">
+          <input type="text" id="search-input" placeholder="Search..">
+        </div> 
+        <!-- Searchbox Demo -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              var searchInput = document.getElementById("search-input");
+
+              searchInput.addEventListener("keydown", function(event) {
+                  if (event.key === "Enter") {
+                      event.preventDefault(); 
+                      alert("Search Function Unavailable Currently ):");
+                  }
+              });
+          });
+        </script>
+
+    </header>
+
+    <!-- Hero -->
+
+
+</body>

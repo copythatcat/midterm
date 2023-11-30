@@ -1,0 +1,496 @@
+/* All */
+
+* {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    display: block;
+}
+
+/* Header */
+
+header {
+    font-size: 30px;
+    height: 80px;
+    width: 100vw;
+    background-color: rgb(106, 0, 48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+header img {
+    width: auto;
+    height: 45px;
+}
+
+.topnav input[type=text] {
+    padding: 10px;
+    border: 4px solid rgb(219, 190, 190);
+    font-size: 17px;
+    border-radius: 30px;
+    width: 75%;
+}
+
+/* @media screen and (max-width: 992px){
+}
+
+@media screen and (max-width: 768px){
+} */
+
+
+/* Sidebar */
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(134, 22, 80);
+    left: -200px;
+    transition: 0.5s;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar a {
+    list-style: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#sidebar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(189, 130, 53);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+#sidebar a:hover::before {
+    left: 0;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+}
+
+.toggle-btn span {
+    width: 30px;
+    height: 4px;
+    background: #ffffff;
+    display: block;
+    margin-top: 5px;
+    box-shadow: 1.5px 1.5px rgb(61, 61, 61);
+}
+
+
+/* Hero 1 */
+
+.hero-container {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+/* Heroshowcase 1 Grid */
+
+.mobile-banner{
+    display: none;
+}
+
+
+.hero-showcase-mobile {
+    display: none;
+}
+
+
+.hero-showcase-grid {
+    display: grid;
+    padding: 20px;
+    align-items: end;
+}
+
+.hero1-griditem1 h1 {
+    transform: translate(0px, 20px);
+    width: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.hero1-griditem1 a {
+    text-decoration: none;
+}
+
+.hero1-griditem1 h1:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.hero1-griditem2 {
+    transform: translate(0px, -45px);
+}
+
+.hero1-griditem3 {
+    transform: translate(0px, -100px);
+    overflow: auto;
+    text-decoration: none;
+}
+
+.hero1-griditem3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero1-griditem3 a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.banner {
+    width: 80px;
+    height: 400px;
+    display: block;
+    background-color: rgb(182, 129, 160);
+    writing-mode: vertical-lr;
+    text-align: center;
+    color: white;
+}
+
+.banner h3 {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.banner h3:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* This is the "The Latest" header */
+
+.thelatest-container {
+    display: block;
+    width: 100vw;
+}
+
+.thelatest-container img {
+    margin-top: -10px;
+    height: 30px;
+}
+
+.thelatest {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(255, 163, 187);
+    width: 30vw;
+    box-shadow: 7px 7px rgb(246, 189, 32);
+}
+
+
+/* This is the box that contains the food items in grid */
+.thelatest-container-grid { 
+    height: 600px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* These are the individual grid items of food, all lumped into one styling group to maintain consistency */
+
+.thelatest-item {
+    padding: 10px;
+    background-color: #8a1751;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    height: 350px;
+    box-shadow: 4px 4px rgb(61, 61, 61);
+    overflow: hidden;
+}
+
+.thelatest-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.thelatest-item a h1:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+
+.thelatest-item h1 {
+    background-color: rgba(145, 0, 89, 0.6);
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+/* These are the individual food boxes with images added to each for styling */
+
+#recipe1-griditem1 {
+    background: url(images/Dish1.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recipe1-griditem2 {
+    background: url(images/Dish2.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recipe1-griditem3 {
+    background: url(images/Dish3.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recipe1-griditem4 {
+    background: url(images/Dish4.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recipe1-griditem5 {
+    background: url(images/Dish6.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recipe1-griditem6 {
+    background: url(images/Dish7.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    margin-top: 190px;
+    height: 180px;
+    background-color: rgb(66, 0, 53);
+    border: 1px solid black;
+    border-left: 0cap;
+    border-right: 0cap;
+    border-bottom: 0cap;
+    align-items: start;
+}
+
+footer img {
+    height: 18%;
+    padding: 20px;
+}
+
+footer p {
+    padding: 20px;
+    margin-top: -40px;
+    size: 15px;
+    color: white;
+}
+
+.bottomemail {
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: 7px;
+}
+
+.bottomemail input[type=text] {
+    padding: 10px;
+    border: 4px solid rgb(219, 190, 190);
+    font-size: 15px;
+    width: 45%;
+}
+
+.link-container {
+    display: flex;
+    column-gap: 10px;
+    margin-left: 20px;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.link-container h4:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+    .topnav{
+        display: none;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    #span1{
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+    
+    header img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        background: rgb(79, 0, 36);
+    }
+
+    .mobile-menu a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobile-menu ul{
+        list-style: none;
+        text-align: center;
+    }
+
+    .mobile-menu li{
+        border: 0.5px solid white;
+        padding: 10px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .hero-container {
+        display: block;
+    }
+
+    .hero-showcase-grid{
+        display: none;
+    }
+
+    .hero1-griditem1 h1 {
+        display: none;
+    }
+
+    .hero1-griditem2 p {
+        display: none;
+    }
+
+    .hero-container img{
+        width: 100vw;
+    }
+
+    #banner1 {
+        display: none;
+    }
+
+    #mobile-banner1 {
+        display: block;
+        background-color: rgb(182, 129, 160);
+        padding: 10px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: -5px;
+    }
+
+    #mobile-banner1 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .hero1-griditem3 {
+        display: none;
+    }
+
+    .hero-showcase-mobile {
+        display: block;
+        padding: 20px;
+        border: 2px solid red;
+    }
+
+    .hero-showcase-mobile a {
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .thelatest-container-grid{
+        display: none;
+    }
+
+    #image1{
+        display: block;
+        width: 100vw;
+        margin-top: 246px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .thelatest-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .bottomemail{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    footer { 
+        display: none;
+    }
+
+    footer img {
+        display: none;
+    }
+}
