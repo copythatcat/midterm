@@ -257,28 +257,28 @@ header img {
 /* These are the individual food boxes with images added to each for styling */
 
 #recipe1-griditem1 {
-    background: url(../images/Dish1.jpg);
+    background: url(images/Dish1.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipe1-griditem2 {
-    background: url(../images/Dish2.jpg);
+    background: url(images/Dish2.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipe1-griditem3 {
-    background: url(/images/Dish3.jpg);
+    background: url(images/Dish3.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipe1-griditem4 {
-    background: url(/images/Dish4.jpg);
+    background: url(images/Dish4.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
